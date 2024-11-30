@@ -388,6 +388,7 @@ footer .social .social-list .social-item .social-link svg.svg,
   border-top-right-radius: 0px;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
+  width: calc((100% - 72px) / 4);
 }
 .team .container .section-list .section-item .section-content .title,
 .team .container .section-list .section-item .section-content .description {
@@ -402,7 +403,7 @@ footer .social .social-list .social-item .social-link svg.svg,
   row-gap: 48px;
 }
 .portfolio .container .section-list .section-item {
-  width: fit-content;
+  width: calc((100% - 48px) / 3);
 }
 .portfolio .container .section-list .section-item .section-content {
   padding-left: 16px;
@@ -533,7 +534,7 @@ footer .form-container .button .icon {
   z-index: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* display: none; */
+  display: none;
 }
 .modal-container {
   position: absolute;
@@ -716,4 +717,167 @@ footer .form-container .button .icon {
 .visually-hidden {
   visibility: hidden;
   opacity: 0;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1158px) {
+  .container {
+    width: 100%;
+  }
+  .page-header .logo {
+    margin-right: 120px;
+  }
+  .address-menu {
+    margin: 0;
+  }
+  .address-list {
+    flex-direction: column;
+    gap: 0;
+  }
+  .address-list .address-item {
+    padding-top: 8px;
+    padding-bottom: 0px;
+  }
+  .address-list .address-item .address-link {
+    font-size: 12px;
+  }
+  /* Team */
+  .team .container {
+    padding-left: 108px;
+    padding-right: 108px;
+  }
+  .team .section-list {
+    column-gap: 24px;
+    row-gap: 64px;
+    justify-content: center;
+  }
+  .team .section-list .section-item {
+    min-width: 264px;
+  }
+  /* Features */
+  .features .section-list {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .features .section-list .section-item {
+    min-width: 356px;
+  }
+  /* Portfolio  */
+  .portfolio .section-list {
+    margin: auto;
+    justify-content: center;
+  }
+  .portfolio .section-list .section-item {
+    min-width: 356px;
+  }
+  /* Footer */
+  .page-footer .container {
+    margin: 0;
+    flex-wrap: wrap;
+    padding-left: 108px;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .page-footer .container .text {
+    margin: 0;
+  }
+  .page-footer .container .form-container {
+    margin: 0;
+  }
+}
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 767px) {
+  .page-header .container {
+    display: none;
+  }
+  .container {
+    width: 100%;
+  }
+  .address-menu {
+    margin-left: 0;
+  }
+
+  /* Features */
+  .features .container {
+    padding: 0 16px;
+  }
+  .features .section-list {
+    flex-direction: column;
+    justify-content: center;
+    gap: 72px;
+  }
+  .features .section-list .section-item {
+    min-width: 100%;
+  }
+  .features .section-list .section-item .title {
+    text-align: center;
+  }
+  /* Team */
+  .team .container {
+    padding: 0 28px;
+  }
+  .team .section-list {
+    flex-direction: column;
+    gap: 72px;
+    justify-content: center;
+  }
+  .team .section-list .section-item {
+    min-width: 100%;
+  }
+  /* Portfolio */
+  .portfolio .container {
+    padding: 0 16px;
+  }
+  .portfolio .section-list {
+    flex-direction: column;
+    gap: 48px;
+    justify-content: center;
+  }
+  .portfolio .section-list .section-item {
+    min-width: 100%;
+  }
+  .portfolio .section-list .section-item .section-back-content {
+    width: 100%;
+  }
+  .page-footer .container {
+    flex-direction: column;
+    gap: 72px;
+    align-items: center;
+    padding: 0 16px;
+  }
+  .page-footer .container .text,
+  .page-footer .container .social {
+    margin: 0;
+    text-align: center;
+  }
+  .page-footer .container .text .logo {
+    margin: 0 0 17.5px 0;
+  }
+  .page-footer .container .form-container {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    min-width: 100%;
+  }
+  .page-footer .container .form-container .title {
+    margin: 0;
+  }
+
+  .page-footer .container .form-container .form {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+  .page-footer .container .form-container .form .input-label {
+    width: 100%;
+  }
+  .page-footer .container .form-container .form .button {
+    width: 117px;
+  }
 }
