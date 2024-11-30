@@ -765,6 +765,9 @@ footer .form-container .button .icon {
   .features .section-list .section-item {
     min-width: 356px;
   }
+  .features .section-list .section-item .title {
+    font-size: 36px;
+  }
   /* Portfolio  */
   .portfolio .section-list {
     margin: auto;
@@ -815,6 +818,7 @@ footer .form-container .button .icon {
   }
   .features .section-list .section-item .title {
     text-align: center;
+    font-size: 36px;
   }
   /* Team */
   .team .container {
