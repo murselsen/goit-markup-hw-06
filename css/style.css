@@ -37,7 +37,9 @@ img {
   display: flex;
   justify-content: space-between;
 }
-
+.page-header .container .nav-toggle {
+  display: none;
+}
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 18px;
@@ -795,7 +797,7 @@ footer .form-container .button .icon {
 /* Mobile */
 @media (min-width: 320px) and (max-width: 767px) {
   .page-header .container {
-    display: none;
+    /* display: none; */
   }
   .container {
     width: 100%;
