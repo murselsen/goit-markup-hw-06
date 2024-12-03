@@ -792,7 +792,8 @@ footer .form-container .button .icon {
   .page-footer .container .form-container {
     margin: 0;
   }
-  .features .section-list .section-item .icon {
+
+  .features .container .section-list .section-item .icon {
     display: none;
   }
 }
@@ -818,7 +819,7 @@ footer .form-container .button .icon {
   .features .section-list .section-item {
     min-width: 100%;
   }
-  .features .section-list .section-item .icon {
+  .features .container .section-list .section-item .icon {
     display: none;
   }
   .features .section-list .section-item .title {
